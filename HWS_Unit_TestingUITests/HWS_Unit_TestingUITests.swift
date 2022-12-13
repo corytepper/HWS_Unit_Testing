@@ -34,6 +34,7 @@ final class HWS_Unit_TestingUITests: XCTestCase {
     
     func testUserFilteringByString() {
         let app = XCUIApplication()
+        app.activate()
         app.buttons["Search"].tap()
         
         let filterAlert = app.alerts
